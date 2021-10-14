@@ -1,0 +1,392 @@
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+@import '~vant/lib/index.css';
+@import '~vue2-daterange-picker/dist/vue2-daterange-picker.css';
+@import '~verte/dist/verte.css';
+@import '~vue-select/dist/vue-select.css';
+
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  background-color: #f4f4f4;
+}
+// === form input ===
+.form-control:active {
+  box-shadow: none;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+
+// === v-select ===
+.vs--searchable .vs__dropdown-toggle {
+  border: none;
+  height: 30px;
+}
+
+
+.leftsidebar {
+  position: fixed;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: var(--theme);
+  border-radius: 10px;
+  height: 42px;
+  border: none;
+  font-weight: bold;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-primary:disabled {
+  background-color: var(--theme);
+  border-radius: 10px;
+  height: 42px;
+  border: none;
+  font-weight: bold;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: var(--secondary-theme);
+  border-radius: 10px;
+  height: 42px;
+  border: none;
+  font-weight: bold;
+  box-shadow: none;
+  color: var(--theme);
+  outline: none;
+}
+.page-item.active .page-link {
+  background-color: var(--theme);
+  border-color: var(--theme);
+}
+
+.page-item .page-link {
+  color: var(--theme);
+}
+
+.van-uploader__preview {
+  width: 140px;
+  height: 140px;
+  margin-right: 10px;
+}
+.van-uploader__preview-image {
+  min-width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  border: 2px solid #e4e4e4;
+}
+#profile-upload .van-uploader__preview-image {
+  border-radius: 50%;
+}
+.company-profile .van-uploader__preview-image,
+.category-image-upload .van-uploader__preview-image {
+  width: auto;
+  border: 2px solid #e4e4e4;
+}
+
+.van-uploader__preview-delete {
+  border-radius: 10px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  z-index: 10;
+  margin-top: -5px;
+  margin-right: -5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profile-upload .van-uploader__preview-delete {
+  border-radius: 10px;
+  margin-top: -5px;
+  margin-right: -5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+#profile-upload .van-uploader__upload {
+  border-radius: 50%;
+}
+.van-uploader__upload {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  margin: 0px;
+  width: 140px;
+  height: 140px;
+  position: relative;
+}
+
+.van-uploader__preview-delete-icon {
+  top: unset !important;
+  right: unset !important;
+}
+// ==== for color picker ====
+.verte__recent-color:hover{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.verte__recent-color{
+  box-shadow:none;
+}
+#just-recent-color .verte__menu {
+  box-shadow: none;
+  width: 210px;
+}
+#color-picker-popup,
+#product-option-modal {
+  border-radius: 10px;
+}
+#modal-color-picker .verte__menu {
+  box-shadow: none;
+}
+#modal-color-picker .verte-picker__canvas {
+  border-radius: 10px;
+}
+#just-recent-color {
+  justify-content: start;
+  width: 210px;
+}
+#just-recent-color .verte-picker {
+  display: none;
+}
+#just-recent-color .slider {
+  display: none;
+}
+#just-recent-color .verte__inputs {
+  display: none;
+}
+#just-recent-color .verte__model {
+  display: none;
+}
+#just-recent-color .verte__recent {
+  justify-content: start;
+}
+#just-recent-color .verte__controller {
+  padding: 0px;
+}
+// ==== for color picker ====
+//  ==== for modal ====
+#bank-account-modal {
+  border-radius: 10px;
+}
+.appearance-modal {
+  border: 1px solid red;
+}
+.modal-content {
+  width: 90%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+}
+.van-switch--on {
+  background-color: var(--theme);
+}
+.van-switch {
+  border: 2px solid #e4e4e4;
+}
+.van-switch__node {
+  border: 1px solid #e4e4e4;
+}
+
+// ==== for modal ====
+// ==== for popover ====
+#popover-noti .popover-body {
+  border-radius: 10px;
+}
+#popover-add-person {
+  border: none;
+  border-radius: 7px;
+  padding: 7px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#popover-noti {
+  border-radius: 7px;
+  width: 1000px;
+  padding: 10px 0px;
+  border: none;
+  max-height: 500px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.popoverDuplicate,
+.popoverEdit {
+  font-weight: bold;
+}
+.popoverDelete {
+  color: red;
+  font-weight: bold;
+}
+.van-popover__action {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+.van-popover__content {
+  min-width: 160px;
+  width: auto;
+}
+// ==== end for popover ====
+// ==== for date picker ====
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: var(--theme);
+}
+.daterangepicker .btn-primary,
+.daterangepicker .btn-success {
+  background-color: var(--theme);
+}
+// ==== end for date picker ====
+// ==== for checkbox ====
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: var(--theme);
+  background-color: var(--theme);
+}
+// ==== end for checkbox ====
+
+.pangination {
+  .page-item {
+    .active {
+      background-color: var(--primary);
+    }
+  }
+}
+
+.filter-button {
+  color: rgba(24, 24, 24, 1);
+  background-color: white;
+  border: 2px solid #d1d1d1;
+  height: 35px;
+  border-radius: 10px;
+}
+.van-popover__arrow {
+  display: none;
+}
+
+.modal-header .close {
+  position: absolute;
+  right: 19px;
+  top: 14px;
+}
+.modal-header {
+  display: block;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.dropdown button {
+  height: 48px;
+  border-radius: 10px;
+}
+.dropdown button:focus {
+  outline: none;
+  border: none;
+}
+//invoice create
+.calendar-box {
+  z-index: 20;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 400;
+  justify-content: center;
+  justify-items: center;
+  padding: 5px;
+}
+.reportrange-text {
+  height: 47px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  align-items: center;
+  border: 2px solid #f4f4f4;
+}
+
+.sale-invoice-calendar .vue-daterange-picker {
+  width: 100%;
+  align-content: center;
+}
+.sale-invoice-calendar .vs__dropdown-toggle {
+  height: 40px;
+  background: #ffffff;
+  border: 2px solid #f4f4f4;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.prodcut-detail .vs__dropdown-toggle {
+  height: 40px;
+  border: 2px solid #f4f4f4 !important;
+  border-radius: 10px !important;
+}
+.prodcut-detail .vs__open-indicator {
+  display: none;
+}
+.prodcut-detail .vs__clear {
+  display: none;
+}
+.text-bold {
+  font-weight: bold;
+}
+.carousel-caption {
+  top: -30px;
+}
+.carousel-control-prev-icon {
+  background-image: url(/image/auth/arrow-circle-prev.svg);
+  width: 30px;
+  height: 30px;
+  left: 20px;
+  position: absolute;
+}
+.carousel-control-next-icon {
+  background-image: url(/image/auth/arrow-circle-next.svg);
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  position: absolute;
+}
+.vs--searchable .vs__dropdown-toggle {
+  border: none;
+}
+.underline {
+  text-decoration: underline !important;
+}
+
+.daterangepicker .btn-secondary {
+  height: 28px;
+  border-radius: 3px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.flex-item {
+  flex: 1 1 300px;
+}
+.invisible {
+  visibility: hidden;
+}
